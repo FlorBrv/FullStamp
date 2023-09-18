@@ -1,0 +1,341 @@
+/** Paleta de colores
+.color1 { #c49c5c };
+.color2 { #dca4a4 };
+.color3 { #614923 };
+.color4 { #cc8c8c };
+.color5 { #d8b9b8 }; **/
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style:none ;}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+
+header.img-logo{
+    height: 100px;
+    margin: 0;
+    padding: 25px 30px;
+    
+}
+
+
+
+.navbar-brand img{
+    height:80px;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size:20px;
+    
+}
+
+
+#hero{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(img-inicio/pers-1.jpg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+}
+
+ 
+#hero h1{
+   color: white;
+   font-weight: bold 100px;
+}
+.titulo-presentacion{
+    color:  rgb(204, 142, 142);
+
+}
+#presentacion .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#favoritos{
+    background-color: rgb(243, 239, 239);
+    color:white;
+    text-align: center;
+}
+
+#favoritos .container{
+    padding: 90px 12px;
+}
+
+#favoritos p{
+    display: none;
+}
+
+#favoritos h2{
+    margin-top: 0;
+    color: rgb(204, 142, 142);
+    font-size: 60px;
+    
+    margin-bottom: 50px;
+}
+
+#favoritos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(img-favoritos/fav1.jpg);
+
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(img-favoritos/fav4.jpg);
+
+}
+
+.carta:nth-child(3){
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(img-favoritos/fav6.jpg);
+}
+
+
+#uso-tinta .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+.titulo-usos{
+    color:  rgb(204, 142, 142);
+
+}
+
+#uso-ceramica .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+.seguinos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+   
+}
+.imgseguinos{
+    height: 350px;
+   
+}
+.textoseguinos{
+    height:40px;
+  
+}
+
+.section-contacto{
+    text-align: center;
+    margin-top: 50px;
+    height: 110px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.redes-sociales a {
+    font-size: 45px;
+    transition: all ease 400ms;
+    color: black;
+}
+
+footer {
+    background-color: rgb(233, 238, 238);
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.img-logo{
+    padding: 10px;
+    height: 90px;
+}
+
+@media(min-width: 540px){
+    
+.seguinos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+   
+}
+.imgseguinos{
+    height: 480px;
+   
+}
+.textoseguinos{
+    height:80px;
+    
+}
+
+}
+
+@media(min-width: 1000px){
+    header{
+        position: fixed;
+        width: 100%;
+        
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 90px;
+        
+    }
+
+  nav .container{
+    margin-left: 20px;
+  }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom:0;
+        padding-right: 20px;
+      
+        
+    }
+
+    #uso-tinta .container{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    #uso-tinta .texto-tinta{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+    }
+
+    #uso-tinta .img-container {
+        background-image: url("img-inicio/sello-tinta.jpg");
+        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 300px;
+    
+    }
+    
+ 
+    
+    #uso-ceramica .container{
+        display: flex;
+        justify-content:space-evenly;
+    }
+    #uso-ceramica .texto-ceramica{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #uso-ceramica .img-container {
+        background-image: url("img-inicio/sello-ceramica.jpg");
+        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 300px;
+    
+    }
+    #uso-ceramica h2{
+        margin-top: 0;
+    }
+   
+
+ #uso-tinta h2{
+        margin-top: 0;
+    }
+
+    #favoritos .favoritos-carta{
+        display: flex;
+        justify-content: center;
+    }
+
+    #favoritos p{
+        display: block;
+        margin-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    #favoritos h3{
+        margin-top: 0;
+        font-weight: bold;
+    }
+
+    #favoritos .carta{
+        padding: 50px;
+    }
+
+    .seguinos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .imgseguinos{
+        height: 700px;
+        margin: 10px;
+    }
+    .textoseguinos{
+        height:160px;
+        margin: 10px;
+    }
+}

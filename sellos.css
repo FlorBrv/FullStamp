@@ -1,0 +1,116 @@
+@import url(index.css);
+
+
+.titulo-personalizados{
+    color:  rgb(204, 142, 142);
+    padding: 0%;
+    padding-top: 30px;
+    
+}
+#personalizados .container{
+    text-align: center;
+    padding: 10px 12px;
+} 
+
+ #personalizados p{
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0px;
+ }
+
+h2{
+    font-size: 40px;
+}
+
+.div-medidas{
+    
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(204, 142, 142);
+    font-weight: bold;
+    margin-bottom: 30px;
+ }
+
+ .vermas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+    
+ .texto-info{
+    margin:40px;
+    
+ }
+
+ .mapa{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+ }
+
+
+
+@media(min-width: 545px)
+ {
+ 
+#personalizados .container{
+    padding-top: 50px;
+}
+#personalizados p{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0% ;
+}
+.img-sellos{
+    height: 460px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   padding: 10px;
+    margin: 20px;
+}
+
+.img1 {
+    height: 450px;
+   
+}
+section p{
+    padding: 25px;
+    margin-top: 30px;
+ }
+
+ .mapa{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ } 
+.c-footer{
+    height: 60p;
+}
+
+footer .container{
+   padding-top: 0px;
+   height: 30px;
+}
+
+
+ }
+
+@media(min-width: 1000px){
+    #personalizados .container{
+        padding-top: 120px;
+    }
+    .div-medidas{
+   padding-left: 200px;
+   padding-right: 200px;
+}
+ }
+
